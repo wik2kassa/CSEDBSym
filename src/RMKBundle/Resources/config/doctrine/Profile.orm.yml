@@ -1,0 +1,26 @@
+RMKBundle\Entity\Profile:
+    type: entity
+    table: null
+    repositoryClass: RMKBundle\Entity\ProfileRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        fname:
+            type: string
+            length: '40'
+        lname:
+            type: string
+            length: '40'
+        birthday:
+            type: datetime
+        username:
+            type: string
+            length: '40'
+        password:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
