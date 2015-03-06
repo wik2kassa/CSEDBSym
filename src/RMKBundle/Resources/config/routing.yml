@@ -1,0 +1,11 @@
+rmk_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: RMKBundle:Default:index }
+
+register:
+    path:     /register
+    defaults: { _controller: RMKBundle:Register:register }
+
+login:
+    path:     /login
+    defaults: { _controller: RMKBundle:Register:login }
